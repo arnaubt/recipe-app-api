@@ -18,6 +18,7 @@
       <sourceFolder url="file://$MODULE_DIR$/app" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/app/app" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/app/core" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/app/recipe" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/app/user" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="Remote Python 3.9.9 Docker Compose (app)" jdkType="Python SDK" />
