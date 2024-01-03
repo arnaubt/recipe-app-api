@@ -1,2 +1,3 @@
-# recipe-app-api
-Recipe API Project
+# Recipe API Project
+
+To start the project, simply run ```docker compose up```.

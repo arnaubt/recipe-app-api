@@ -10,7 +10,6 @@ services:
       - "8000:8000"
     volumes:
       - ./app:/app
-      - /Users/arnau.buchtorrents/Applications/PyCharm.app/Contents/plugins/python/helpers/pycharm:/opt/.pycharm_helpers/pycharm:ro
       - dev-static-data:/vol/web
     command: >
       sh -c "python manage.py wait_for_db && 
