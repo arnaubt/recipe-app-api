@@ -5,6 +5,8 @@ from django.contrib.auth import (
     get_user_model,
     authenticate,
 )
+from django.contrib.auth.password_validation import validate_password
+from django.core.exceptions import ValidationError
 from django.utils.translation import gettext as _
 
 from rest_framework import serializers
@@ -28,6 +30,10 @@ class UserSerializer(serializers.ModelSerializer):
         user = super().update(instance, validated_data)
 
         if password:
+            try:
+                validate_password(password)
+            except ValidationError:
+                raise ValueError('Password is not valid.')
             user.set_password(password)
             user.save()
 
